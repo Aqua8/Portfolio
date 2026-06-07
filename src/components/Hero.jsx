@@ -1,5 +1,6 @@
+import { useState, useEffect } from 'react'
 import { motion } from 'framer-motion'
-import { FiGithub, FiMail } from 'react-icons/fi'
+import { FiGithub, FiMail, FiChevronDown } from 'react-icons/fi'
 
 const item = {
   hidden: { opacity: 0, y: 24 },
@@ -11,8 +12,16 @@ const item = {
 }
 
 export default function Hero() {
+  const [scrolled, setScrolled] = useState(false)
+
+  useEffect(() => {
+    const onScroll = () => setScrolled(window.scrollY > 50)
+    window.addEventListener('scroll', onScroll, { passive: true })
+    return () => window.removeEventListener('scroll', onScroll)
+  }, [])
+
   return (
-    <section className="min-h-screen flex items-center justify-center px-6">
+    <section className="min-h-screen flex items-center justify-center px-6 relative">
       <div className="text-center">
         <motion.p
           className="text-brand font-semibold text-base tracking-wide mb-3"
@@ -72,7 +81,7 @@ export default function Hero() {
             GitHub
           </a>
           <a
-            href="mailto:huiwoo99@gmail.com"
+            href="mailto:huiwoo99@naver.com"
             className="inline-flex items-center gap-2 px-7 py-3 border-2 border-brand text-brand rounded-full font-medium hover:bg-brand hover:text-white transition-colors"
           >
             <FiMail size={17} />
@@ -80,6 +89,15 @@ export default function Hero() {
           </a>
         </motion.div>
       </div>
+
+      <motion.div
+        className="absolute bottom-10 left-1/2 -translate-x-1/2 text-gray-300"
+        initial={{ opacity: 0 }}
+        animate={{ opacity: scrolled ? 0 : 1, y: scrolled ? 0 : [0, 8, 0] }}
+        transition={{ opacity: scrolled ? { duration: 0.3 } : { delay: 1.2, duration: 0.5 }, y: { delay: 1.2, duration: 1.4, repeat: Infinity, ease: 'easeInOut' } }}
+      >
+        <FiChevronDown size={28} />
+      </motion.div>
     </section>
   )
 }
