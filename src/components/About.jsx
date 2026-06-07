@@ -101,6 +101,33 @@ export default function About() {
                         ))}
                       </div>
                     </div>
+                    <div>
+                      <p className="text-sm font-semibold text-gray-700">독자 솔루션</p>
+                      <p className="text-xs text-gray-400 mb-2">2022.01 — 2022.08</p>
+                      <p className="text-sm text-gray-600 leading-relaxed mb-3">
+                        윈도우 종속적인 ASP & MS SQL 기반 솔루션을 Node.js & MariaDB 환경으로
+                        전환하는 마이그레이션 프로젝트
+                      </p>
+                      <ul className="space-y-1.5 text-sm text-gray-600">
+                        {[
+                          'ASP 기반 성능 관리·보고서 관리·환경설정 페이지를 Node.js로 마이그레이션 및 고도화, 서버 환경 제약 해소',
+                          'MS SQL → MariaDB 마이그레이션 후 쿼리 튜닝·인덱스 작업으로 성능 개선',
+                          '오프라인 환경에 최적화된 서버 세팅 및 배포 환경 구성',
+                        ].map((item) => (
+                          <li key={item} className="flex gap-2">
+                            <span className="text-brand shrink-0">·</span>
+                            <span>{item}</span>
+                          </li>
+                        ))}
+                      </ul>
+                      <div className="flex flex-wrap gap-1.5 mt-4">
+                        {['Node.js', 'jQuery', 'MariaDB', 'Python', 'SVN'].map((t) => (
+                          <span key={t} className="px-2 py-0.5 bg-brand/10 text-brand rounded text-xs font-medium">
+                            {t}
+                          </span>
+                        ))}
+                      </div>
+                    </div>
                   </div>
                 </div>
               </div>
