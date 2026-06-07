@@ -7,7 +7,7 @@ export default function Projects() {
   const { ref, ...motionProps } = useScrollFadeIn()
 
   return (
-    <section id="projects" className="py-24 px-6 bg-white">
+    <section id="projects" className="py-16 md:py-24 px-6 bg-white">
       <div className="max-w-4xl mx-auto">
         <motion.div ref={ref} {...motionProps}>
           <div className="text-center">

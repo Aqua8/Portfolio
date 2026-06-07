@@ -12,7 +12,7 @@ export default function About() {
   const { ref, ...motionProps } = useScrollFadeIn()
 
   return (
-    <section id="about" className="py-24 px-6">
+    <section id="about" className="py-16 md:py-24 px-6">
       <div className="max-w-4xl mx-auto">
         <motion.div ref={ref} {...motionProps}>
           <div className="text-center">
@@ -20,7 +20,7 @@ export default function About() {
             <div className="w-12 h-1 bg-brand mx-auto mt-3 rounded-full" />
           </div>
 
-          <div className="mt-14 grid md:grid-cols-5 gap-12">
+          <div className="mt-8 md:mt-14 grid md:grid-cols-5 gap-8 md:gap-12">
             <div className="md:col-span-3 space-y-10">
               <div>
                 <h3 className="text-xs font-semibold text-brand uppercase tracking-widest mb-4">소개</h3>
