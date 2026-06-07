@@ -39,6 +39,15 @@ export default function About() {
               </div>
 
               <div>
+                <h3 className="text-xs font-semibold text-brand uppercase tracking-widest mb-4">경력</h3>
+                <div className="space-y-0.5">
+                  <p className="font-semibold text-gray-800">주식회사 에스티엔인포텍 · 주임 연구원</p>
+                  <p className="text-sm text-gray-500">개발</p>
+                  <p className="text-sm text-gray-400">2021.07 — 2025.09</p>
+                </div>
+              </div>
+
+              <div>
                 <h3 className="text-xs font-semibold text-brand uppercase tracking-widest mb-4">학력</h3>
                 <div className="space-y-4">
                   <div className="space-y-0.5">
