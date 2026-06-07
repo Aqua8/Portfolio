@@ -45,7 +45,7 @@ export default function About() {
                     <p className="font-semibold text-gray-800">주식회사 에스티엔인포텍 · 주임 연구원</p>
                     <p className="text-sm text-gray-400">2021.07 — 2025.09</p>
                   </div>
-                  <div className="pl-4 border-l-2 border-brand/20 space-y-3">
+                  <div className="pl-4 border-l-2 border-brand/20 space-y-6">
                     <div>
                       <p className="text-sm font-semibold text-gray-700">국방 광대역 통합망 (M-BcN)</p>
                       <p className="text-xs text-gray-400 mb-2">2023.01 — 2025.08</p>
@@ -70,6 +70,31 @@ export default function About() {
                       </ul>
                       <div className="flex flex-wrap gap-1.5 mt-4">
                         {['React', 'Java', 'Spring Framework', 'Python', 'MyBatis', 'Tibero', 'Git'].map((t) => (
+                          <span key={t} className="px-2 py-0.5 bg-brand/10 text-brand rounded text-xs font-medium">
+                            {t}
+                          </span>
+                        ))}
+                      </div>
+                    </div>
+                    <div>
+                      <p className="text-sm font-semibold text-gray-700">KT AiON</p>
+                      <p className="text-xs text-gray-400 mb-2">2021.08 — 2022.01</p>
+                      <p className="text-sm text-gray-600 leading-relaxed mb-3">
+                        KT 네트워크 관제 솔루션 SI 개발
+                      </p>
+                      <ul className="space-y-1.5 text-sm text-gray-600">
+                        {[
+                          'AI 모델 등록·수정·삭제를 관리하는 모델 관리 페이지 개발',
+                          '실시간 트래픽 현황을 모니터링·분석하는 트래픽 관제 페이지 개발',
+                        ].map((item) => (
+                          <li key={item} className="flex gap-2">
+                            <span className="text-brand shrink-0">·</span>
+                            <span>{item}</span>
+                          </li>
+                        ))}
+                      </ul>
+                      <div className="flex flex-wrap gap-1.5 mt-4">
+                        {['React', 'Node.js', 'MySQL', 'SVN', 'Git'].map((t) => (
                           <span key={t} className="px-2 py-0.5 bg-brand/10 text-brand rounded text-xs font-medium">
                             {t}
                           </span>
