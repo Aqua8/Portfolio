@@ -19,11 +19,11 @@ export default function Contact() {
 
           <div className="mt-10 flex flex-col sm:flex-row gap-4 justify-center">
             <a
-              href="mailto:huiwoo99@gmail.com"
+              href="mailto:huiwoo99@naver.com"
               className="inline-flex items-center justify-center gap-2 px-5 sm:px-7 py-3.5 bg-brand text-white rounded-full font-medium hover:bg-brand-hover transition-colors shadow-sm text-sm sm:text-base"
             >
               <FiMail size={17} />
-              huiwoo99@gmail.com
+              huiwoo99@naver.com
             </a>
             <a
               href="https://github.com/Aqua8"
