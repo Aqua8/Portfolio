@@ -28,9 +28,9 @@ export default function Projects() {
 
 function ProjectCard({ project }) {
   return (
-    <div className="bg-page-bg rounded-2xl p-6 border border-gray-100 hover:border-brand/30 hover:shadow-md transition-all duration-300">
+    <div className="bg-page-bg rounded-2xl p-6 border border-gray-100 hover:border-brand/30 hover:shadow-md transition-all duration-300 flex flex-col">
       <h3 className="text-lg font-bold text-gray-800 mb-2">{project.name}</h3>
-      <p className="text-gray-500 text-sm leading-relaxed mb-5">{project.description}</p>
+      <p className="text-gray-500 text-sm leading-relaxed mb-5 flex-1">{project.description}</p>
       <div className="flex flex-wrap gap-2 mb-5">
         {project.tech.map((t) => (
           <span
