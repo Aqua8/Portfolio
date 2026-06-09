@@ -8,6 +8,15 @@ const projects = [
     github: 'https://github.com/Aqua8',
     deploy: null,
   },
+  {
+    id: 2,
+    name: '포트폴리오 웹',
+    description:
+        '박희우 포트폴리오 웹 사이트.',
+    tech: ['React'],
+    github: 'https://github.com/Aqua8',
+    deploy: null,
+  },
 ]
 
 export default projects
