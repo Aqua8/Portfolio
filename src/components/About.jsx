@@ -3,8 +3,8 @@ import useScrollFadeIn from '../hooks/useScrollFadeIn'
 
 const techStack = [
   { category: 'Frontend', items: ['React', 'JavaScript', 'HTML/CSS', 'Tailwind CSS'] },
-  { category: 'Backend', items: ['Spring Boot', 'Spring', 'Java', 'Node.js'] },
-  { category: 'Database', items: ['MySQL', 'PostgreSQL', 'Redis'] },
+  { category: 'Backend', items: ['Spring Boot', 'Spring Framework', 'Java', 'Node.js', 'Python'] },
+  { category: 'Database', items: ['MySQL', 'Oracle', 'Tibero', 'Redis'] },
   { category: 'Infra', items: ['Google Cloud Platform (GCE, Firebase)', 'Docker', 'Git'] },
 ]
 
@@ -86,6 +86,7 @@ export default function About() {
                         {[
                           'AI 모델 등록·수정·삭제를 관리하는 모델 관리 페이지 개발',
                           '실시간 트래픽 현황을 모니터링·분석하는 트래픽 관제 페이지 개발',
+                          '안드로이드에서 장애 알림을 받고 접속할 수 있는 모바일 웹앱 개발',
                         ].map((item) => (
                           <li key={item} className="flex gap-2">
                             <span className="text-brand shrink-0">·</span>
@@ -94,7 +95,7 @@ export default function About() {
                         ))}
                       </ul>
                       <div className="flex flex-wrap gap-1.5 mt-4">
-                        {['React', 'Node.js', 'MySQL', 'SVN', 'Git'].map((t) => (
+                        {['React', 'Node.js', 'MySQL', 'Redis', 'SVN', 'Git'].map((t) => (
                           <span key={t} className="px-2 py-0.5 bg-brand/10 text-brand rounded text-xs font-medium">
                             {t}
                           </span>
@@ -121,7 +122,7 @@ export default function About() {
                         ))}
                       </ul>
                       <div className="flex flex-wrap gap-1.5 mt-4">
-                        {['Node.js', 'jQuery', 'MariaDB', 'Python', 'SVN'].map((t) => (
+                        {['Node.js', 'jQuery', 'MariaDB', 'Redis', 'Python', 'SVN'].map((t) => (
                           <span key={t} className="px-2 py-0.5 bg-brand/10 text-brand rounded text-xs font-medium">
                             {t}
                           </span>
@@ -147,24 +148,34 @@ export default function About() {
               </div>
             </div>
 
-            <div className="md:col-span-2">
-              <h3 className="text-xs font-semibold text-brand uppercase tracking-widest mb-4">기술 스택</h3>
-              <div className="space-y-5">
-                {techStack.map(({ category, items }) => (
-                  <div key={category}>
-                    <p className="text-xs text-gray-400 mb-2">{category}</p>
-                    <div className="flex flex-wrap gap-2">
-                      {items.map((item) => (
-                        <span
-                          key={item}
-                          className="px-3 py-1 bg-white text-gray-600 border border-gray-200 rounded-full text-sm hover:border-brand hover:text-brand transition-colors"
-                        >
-                          {item}
-                        </span>
-                      ))}
+            <div className="md:col-span-2 space-y-8">
+              <div>
+                <h3 className="text-xs font-semibold text-brand uppercase tracking-widest mb-4">기술 스택</h3>
+                <div className="space-y-5">
+                  {techStack.map(({ category, items }) => (
+                    <div key={category}>
+                      <p className="text-xs text-gray-400 mb-2">{category}</p>
+                      <div className="flex flex-wrap gap-2">
+                        {items.map((item) => (
+                          <span
+                            key={item}
+                            className="px-3 py-1 bg-white text-gray-600 border border-gray-200 rounded-full text-sm hover:border-brand hover:text-brand transition-colors"
+                          >
+                            {item}
+                          </span>
+                        ))}
+                      </div>
                     </div>
-                  </div>
-                ))}
+                  ))}
+                </div>
+              </div>
+
+              <div>
+                <h3 className="text-xs font-semibold text-brand uppercase tracking-widest mb-4">자격증</h3>
+                <div className="space-y-0.5">
+                  <p className="font-semibold text-gray-800 text-sm">정보처리산업기사</p>
+                  <p className="text-xs text-gray-400">2022.05</p>
+                </div>
               </div>
             </div>
           </div>
