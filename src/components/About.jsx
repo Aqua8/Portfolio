@@ -32,7 +32,10 @@ export default function About() {
                 <p className="text-gray-600 leading-relaxed mt-3">
                   다양한 프로젝트에서 많은 업무를 동시에 맡으면서도 새로운 기술과 도메인을 빠르게 습득해
                   적응해왔으며, 맡은 업무는 기간 내에 반드시 마무리하고 지시를 기다리기보다 필요한 일을
-                  먼저 찾아 움직이는 편입니다. React, Node.js, Spring을 주력으로 프론트엔드부터 백엔드,
+                  먼저 찾아 움직이는 편입니다.
+                </p>
+                <p className="text-gray-600 leading-relaxed mt-3">
+                  React, Node.js, Spring을 주력으로 프론트엔드부터 백엔드,
                   DB 설계, AI 모델 개발까지 전 과정을 경험했으며, 현재는 Claude AI를 활용해 꾸준히
                   자기개발을 이어가고 있습니다.
                 </p>
