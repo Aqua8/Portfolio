@@ -17,6 +17,15 @@ const projects = [
     github: 'https://github.com/Aqua8',
     deploy: import.meta.env.VITE_PORTFOLIO_URL,
   },
+  {
+    id: 3,
+    name: '맛/집 - 맛집 지도 리뷰 서비스',
+    description:
+      '카카오 지도 기반으로 맛집을 검색·북마크하고, 별점과 사진이 담긴 리뷰를 작성·공유하는 서비스입니다.',
+    tech: ['React', 'Spring Boot', 'MariaDB', 'Kakao Maps', 'GCS', 'Docker'],
+    github: 'https://github.com/Aqua8',
+    deploy: import.meta.env.VITE_MATJIP_URL,
+  },
 ]
 
 export default projects
