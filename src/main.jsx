@@ -2,9 +2,9 @@ import React from 'react'
 import ReactDOM from 'react-dom/client'
 import App from './App'
 import './styles/index.css'
-import { injectTracker } from './tracker'
+// import { injectTracker } from './tracker'
 
-injectTracker()
+// injectTracker()
 
 ReactDOM.createRoot(document.getElementById('root')).render(
   <React.StrictMode>
