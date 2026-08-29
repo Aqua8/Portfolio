@@ -5,7 +5,7 @@ const techStack = [
   { category: 'Frontend', items: ['React', 'JavaScript', 'HTML/CSS', 'Tailwind CSS'] },
   { category: 'Backend', items: ['Spring Boot', 'Spring Framework', 'Java', 'Node.js', 'Python'] },
   { category: 'Database', items: ['MySQL', 'Oracle', 'Tibero', 'Redis'] },
-  { category: 'Infra', items: ['Google Cloud Platform (GCE, Firebase)', 'Docker', 'Git'] },
+  { category: 'Infra', items: ['Google Cloud Platform (GCE, Firebase)', 'Cloudflare', 'Docker', 'Git'] },
 ]
 
 export default function About() {
@@ -87,7 +87,7 @@ export default function About() {
                       </p>
                       <ul className="space-y-1.5 text-sm text-gray-600">
                         {[
-                          'AI 모델 등록·수정·삭제를 관리하는 모델 관리 페이지 개발',
+                          '모델 등록·수정·삭제를 관리하는 모델 관리 페이지 개발',
                           '실시간 트래픽 현황을 모니터링·분석하는 트래픽 관제 페이지 개발',
                           '안드로이드에서 장애 알림을 받고 접속할 수 있는 모바일 웹앱 개발',
                         ].map((item) => (
@@ -174,10 +174,24 @@ export default function About() {
               </div>
 
               <div>
-                <h3 className="text-xs font-semibold text-brand uppercase tracking-widest mb-4">자격증</h3>
-                <div className="space-y-0.5">
-                  <p className="font-semibold text-gray-800 text-sm">정보처리산업기사</p>
-                  <p className="text-xs text-gray-400">2022.05</p>
+                <h3 className="text-xs font-semibold text-brand uppercase tracking-widest mb-4">자격증/수료</h3>
+                <div className="space-y-3">
+                  <div className="space-y-0.5">
+                    <p className="font-semibold text-gray-800 text-sm">Google AI Essentials</p>
+                    <p className="text-xs text-gray-400">2026.07</p>
+                  </div>
+                  <div className="space-y-0.5">
+                    <p className="font-semibold text-gray-800 text-sm">정보처리산업기사</p>
+                    <p className="text-xs text-gray-400">2022.05</p>
+                  </div>
+                  <div className="space-y-0.5">
+                    <p className="font-semibold text-gray-800 text-sm">워드프로세서</p>
+                    <p className="text-xs text-gray-400">2016.06</p>
+                  </div>
+                  <div className="space-y-0.5">
+                    <p className="font-semibold text-gray-800 text-sm">컴퓨터활용능력 2급</p>
+                    <p className="text-xs text-gray-400">2015.09</p>
+                  </div>
                 </div>
               </div>
             </div>
