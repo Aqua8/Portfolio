@@ -26,6 +26,14 @@ const projects = [
     github: 'https://github.com/Aqua8/MatJip',
     // deploy: import.meta.env.VITE_MATJIP_URL,
   },
+  {
+    id: 4,
+    name: 'ScheduleAlertBot - 일정 알림 봇',
+    description:
+      'Google Calendar 일정을 매일 아침 자동으로 요약해서 Discord로 보내주고, 일정이 바뀌면 실시간으로 메시지를 수정해주는 개인용 비서 봇입니다.',
+    tech: ['TypeScript', 'Node.js', 'googleapis'],
+    github: 'https://github.com/Aqua8/ScheduleAlertBot',
+  },
 ]
 
 export default projects

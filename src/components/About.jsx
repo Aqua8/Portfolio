@@ -3,7 +3,7 @@ import useScrollFadeIn from '../hooks/useScrollFadeIn'
 
 const techStack = [
   { category: 'Frontend', items: ['React', 'JavaScript', 'HTML/CSS', 'Tailwind CSS'] },
-  { category: 'Backend', items: ['Spring Boot', 'Spring Framework', 'Java', 'Node.js', 'Python'] },
+  { category: 'Backend', items: ['Spring Boot', 'Spring Framework', 'Java', 'Node.js', 'TypeScript', 'Python', 'googleapis'] },
   { category: 'Database', items: ['MySQL', 'Oracle', 'Tibero', 'Redis'] },
   { category: 'Infra', items: ['Google Cloud Platform (GCE, Firebase)', 'Cloudflare', 'Docker', 'Git'] },
 ]
