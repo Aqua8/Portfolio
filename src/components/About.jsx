@@ -2,10 +2,10 @@ import { motion } from 'framer-motion'
 import useScrollFadeIn from '../hooks/useScrollFadeIn'
 
 const techStack = [
-  { category: 'Frontend', items: ['React', 'JavaScript', 'HTML/CSS', 'Tailwind CSS'] },
-  { category: 'Backend', items: ['Spring Boot', 'Spring Framework', 'Java', 'Node.js', 'TypeScript', 'Python', 'googleapis'] },
+  { category: 'Frontend', items: ['React', 'JavaScript', 'TypeScript', 'HTML/CSS', 'Tailwind CSS'] },
+  { category: 'Backend', items: ['Spring Boot', 'Spring Framework', 'Java', 'Node.js', 'Python'] },
   { category: 'Database', items: ['MySQL', 'Oracle', 'Tibero', 'Redis'] },
-  { category: 'Infra', items: ['Google Cloud Platform (GCE, Firebase)', 'Cloudflare', 'Docker', 'Git'] },
+  { category: 'Infra', items: ['Google Cloud Platform (GCE, Firebase)', 'Cloudflare', 'Docker', 'Git', 'googleapis'] },
 ]
 
 export default function About() {
