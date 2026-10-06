@@ -2,10 +2,11 @@ import { motion } from 'framer-motion'
 import useScrollFadeIn from '../hooks/useScrollFadeIn'
 
 const techStack = [
-  { category: 'Frontend', items: ['React', 'JavaScript', 'TypeScript', 'HTML/CSS', 'Tailwind CSS'] },
-  { category: 'Backend', items: ['Spring Boot', 'Spring Framework', 'Java', 'Node.js', 'Python'] },
-  { category: 'Database', items: ['MySQL', 'Oracle', 'Tibero', 'Redis'] },
-  { category: 'Infra', items: ['Google Cloud Platform (GCE, Firebase)', 'Cloudflare', 'Docker', 'Git', 'googleapis'] },
+  { category: 'Frontend', items: ['React', 'Redux', 'JavaScript', 'TypeScript', 'HTML/CSS', 'Tailwind CSS', 'Vite'] },
+  { category: 'Backend', items: ['Spring Boot', 'Spring Framework', 'JPA', 'MyBatis', 'Java', 'Node.js', 'NestJS', 'Python'] },
+  { category: 'Database', items: ['MySQL', 'MariaDB', 'Oracle', 'Tibero', 'Redis'] },
+  { category: 'Infra', items: ['Google Cloud Platform (GCE, Firebase, googleapis)', 'Cloudflare', 'Docker', 'GitLab CI/CD', 'GitHub Actions', 'Git'] },
+  { category: 'AI', items: ['Claude', 'Claude Code'] },
 ]
 
 export default function About() {
@@ -25,7 +26,7 @@ export default function About() {
               <div>
                 <h3 className="text-xs font-semibold text-brand uppercase tracking-widest mb-4">소개</h3>
                 <p className="text-gray-600 leading-relaxed">
-                  대규모 SI 프로젝트를 거치며 꼼꼼함과 책임감을 갖춘 5년차 풀스택 개발자입니다.
+                  대규모 SI 프로젝트를 거치며 꼼꼼함과 책임감을 갖춘 약 4년 2개월 경력의 풀스택 개발자입니다.
                   초기에는 놓치는 부분도 있었지만, 수천 대 장비의 실시간 데이터를 다루는 환경에서
                   작은 실수가 큰 장애로 이어질 수 있다는 것을 몸소 경험하며 세밀함을 키워왔습니다.
                 </p>
@@ -145,7 +146,7 @@ export default function About() {
                   </div>
                   <div className="space-y-0.5">
                     <p className="font-semibold text-gray-800">한국폴리텍Ⅱ대학 인천캠퍼스 · 컴퓨정보과 (전문학사)</p>
-                    <p className="text-sm text-gray-400">2018.02 — 2022.03</p>
+                    <p className="text-sm text-gray-400">2018.03 — 2022.02</p>
                   </div>
                 </div>
               </div>
@@ -177,12 +178,20 @@ export default function About() {
                 <h3 className="text-xs font-semibold text-brand uppercase tracking-widest mb-4">자격증/수료</h3>
                 <div className="space-y-3">
                   <div className="space-y-0.5">
+                    <p className="font-semibold text-gray-800 text-sm">AI Fluency: Framework & Foundations (Anthropic)</p>
+                    <p className="text-xs text-gray-400">2026.10</p>
+                  </div>
+                  <div className="space-y-0.5">
+                    <p className="font-semibold text-gray-800 text-sm">클로드 뽀개기 (패스트캠퍼스)</p>
+                    <p className="text-xs text-gray-400">2026.08 — 2026.09</p>
+                  </div>
+                  <div className="space-y-0.5">
                     <p className="font-semibold text-gray-800 text-sm">Google AI Essentials</p>
                     <p className="text-xs text-gray-400">2026.07</p>
                   </div>
                   <div className="space-y-0.5">
                     <p className="font-semibold text-gray-800 text-sm">정보처리산업기사</p>
-                    <p className="text-xs text-gray-400">2022.05</p>
+                    <p className="text-xs text-gray-400">2023.09</p>
                   </div>
                   <div className="space-y-0.5">
                     <p className="font-semibold text-gray-800 text-sm">워드프로세서</p>
