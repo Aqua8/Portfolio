@@ -42,6 +42,14 @@ const projects = [
     tech: ['TypeScript', 'NestJS', 'React', 'MariaDB'],
     github: 'https://github.com/Aqua8/BotMng',
   },
+  {
+    id: 6,
+    name: 'DevMng - 개인 개발자 포털',
+    description:
+      '내 개인 프로젝트를 한곳에서 보는 Backstage 기반 개발자 포털입니다. 프로젝트 카탈로그와 BotMng 상태 플러그인, 읽기 전용 MCP 도구를 제공하고 GitHub Actions CI와 Docker 이미지로 구성했습니다.',
+    tech: ['TypeScript', 'Backstage', 'React', 'MCP', 'Docker'],
+    github: 'https://github.com/Aqua8/DevMng',
+  },
 ]
 
 export default projects
