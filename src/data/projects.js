@@ -41,6 +41,7 @@ const projects = [
       'ScheduleAlertBot이 남기는 로그를 DB에 저장하고, 웹에서 조회·검색하고 실시간으로 확인하는 로그 관제 서비스입니다. 접속 로그와 Discord 명령 사용 통계 대시보드를 제공합니다.',
     tech: ['TypeScript', 'NestJS', 'React', 'MariaDB'],
     github: 'https://github.com/Aqua8/BotMng',
+    deploy: 'https://botmng.hwp-portfolio.com',
   },
   {
     id: 6,
